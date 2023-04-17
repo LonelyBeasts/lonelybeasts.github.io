@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="Main.css" rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">Home</div>
+        <div class="nav-menu">
+            <span class="menu-btn" onclick="openNav()">&#9776;</span>
+        </div>
+    </header>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="name-container">
+                <h1 class="name-part">Nikolay</h1>
+                <h1 class="name-part">Paliyev</h1>
+            </div>
+            <div class="image-container">
+                <img src="Profile.jpeg" alt="Your Image" class="profile-image">
+            </div>
+        </div>
+        <div class="separator">
+        </div>
+        <div class="carousel-section">
+            <div class="carousel">
+                <div class="arrow left-arrow" onclick="previousContent()">&#10094;
+                </div>
+                <div class="carousel-container">
+                    <div class="content-text-container">
+                        <p id="text-content" class="content-text" onclick="scrollToRow()">Text 1</p>
+                    </div>
+                    <div class="image-content-container">
+                        <img id="image-content" src="path/to/your/image1.jpg" alt="Your Image" class="content-image">
+                    </div>
+                </div>
+                <div class="arrow right-arrow" onclick="nextContent()">&#10095;
+                </div>
+            </div>
+            <div class="dots-container">
+                <span class="dot" onclick="goToContent(0)"></span>
+                <span class="dot" onclick="goToContent(1)"></span>
+                <span class="dot" onclick="goToContent(2)"></span>
+            </div>
+        </div>
+        <div class="separator">
+        </div>
+        <div class="content-section">
+            <div class="row-container" id="row1">
+                <div class="content-text-container">
+                    <h1 class="project-text">Budget And Projection Calulator</h1>
+                    <p>This will be a budget calculator in which you will be able to input your data
+                         like (Income, Date of income, Expenses, Date of expenses, Savings and any other methods of
+                        money related transactions) it will take it and show you a visualization of the projected
+                    amount saved in your portoflio or how much you will be able to spend that week or month.
+                It will also sync with your bank so when you spend money it will automatiically update
+            it will also learn and give you a average amount spent through out each week or months.</p>
+                </div>
+                <div class="image-content-container">
+                    <img src="Budget Chart.jpeg" alt="Your Image" class="content-image">
+                </div>
+            </div>
+            <div class="row-container" id="row2">
+                <div class="content-text-container">
+                    <h1 class="project-text">Futures Trading Bot</h1>
+                    <p>This will be a Futures Trading Bot that I will make to daily trade the futures
+                        market with my own money and will make it be atleast 80% positive trades the 
+                        code will be propriatairy and will not be sold but can be seen from past 
+                        performance as evidence of success.
+                    </p>
+                </div>
+                <div class="image-content-container">
+                    <img src="FuturesBot.jpeg" alt="Your Image" class="content-image">
+                </div>
+            </div>
+            <div class="row-container" id="row3">
+                <div class="content-text-container">
+                    <h1 class="project-text">Pet Care Management Software</h1>
+                    <p>This will be a software in which people will be able to track and help themselves
+                        keeping up with there pets medication and with vacanations and also any treatments there are doing.
+                        like when there next hair cut appoint dentist and if there is anything else like nearby animal hospitals
+                        also help with tips and able to share your pets with others online.
+                    </p>
+                </div>
+                <div class="image-content-container">
+                    <img src="PetCare.jpeg" alt="Your Image" class="content-image">
+                </div>
+            </div>        
+        </div>
+        <div class="bottom-section">
+            <div class="top-row">
+                <div class="links-container">
+                    <div class="column">
+                        <a href="home.html" class="link">Home</a>
+                        <a href="contact.html" class="link">Contact</a>
+                    </div>
+                    <div class="column">
+                        <a href="about.html" class="link">About</a>
+                        <a href="projects.html" class="link">Projects</a>
+                    </div>
+                </div>
+                <div class="icon-container">
+                    <a href="https://www.instagram.com/" target="Instagram">
+                    <img src="Insta.png" alt="Icon 1" class="icon" href="instagram.com">
+                    </a>
+                    <a href="https://twitter.com/?lang=en" target="Twitter">
+                    <img src="Twitter.png" alt="Icon 2" class="icon" href="Twitter.com">
+                    </a>
+                    <a href="https://www.linkedin.com/feed/" target="Linkedin">
+                    <img src="Linkedin.png" alt="Icon 3" class="icon" href="Linkedin.com">
+                    </a>
+                </div>
+            </div>
+            <div class="bottom-row">
+                <div class="text-container">
+                    <p>Nikolay Paliyev</p>
+                    <p>(555) 555-5555</p>
+                </div>
+                <div class="email-container">
+                    <input type="email" id="email-input" placeholder="Your email">
+                    <button id="signup-button">Sign up</button>
+                </div>
+            </div>
+        </div>       
+    </main>
+    <script src="Main.js"></script>
+</body>
+</html>
