@@ -23,6 +23,8 @@ const texts = ["Budget And Projection Calulator", "Futures Trading Bot", "Pet Ca
 let currentIndex = 0;
 let contentInterval;
 
+setContent();
+
 function startContentInterval() {
     contentInterval = setInterval(changeContent, 6000);
 }

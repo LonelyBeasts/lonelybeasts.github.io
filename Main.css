@@ -448,7 +448,7 @@ header {
     }
 
     .name-part {
-        font-size: 65px;
+        font-size: 35px;
     }
 
     .name-part:first-child {
@@ -461,13 +461,105 @@ header {
     }
 
     .profile-image {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
     }
 
     .content-image {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-section, .content-container, .top-row, .bottom-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image-content, #text-content {
+        min-height: 200px;
+        max-height: 400px;
+        min-width: 200px;
+        max-width: 400px;
+    }
+
+    .name-container, .image-container, .content-text-container, .image-content-container {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .image-container {
+        align-items: initial;
+    }
+
+    .image-content-container {
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .row-container {
+        flex-direction: column;
+    }
+
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+
+    .links-container {
+        flex-direction: column;
+    }
+
+    .icon-container {
+        margin-right: 0px;
+    }
+
+    .text-container {
+        padding: 0;
+    }
+
+    #signup-button {
+        margin-right: 20px;
+    }
+
+    .bottom-row {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+    }
+
+    .carousel-container {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 100vh;
+    }
+
+    .name-part {
+        font-size: 35px;
+    }
+
+    .name-part:first-child {
+        padding-bottom: 20px;
+    }
+
+    .name-part:last-child, .name-part:first-child {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .content-image {
+        width: 200px;
+        height: 200px;
     }
 
     .hero-section, .content-container, .top-row, .bottom-row {
@@ -532,23 +624,6 @@ header {
         flex-direction: column;
     }
 
-}
-
-@media (max-width: 480px) {
-    .name-part {
-        font-size: 25px;
-    }
-
-    .profile-image {
-        width: 100px;
-        height: 100px;
-    }
-
-    .content-image {
-        width: 200px;
-        height: 200px;
-    }
-
     .link {
         font-size: 14px;
         padding-left: 15px;
@@ -573,5 +648,4 @@ header {
         width: 100%;
         flex-direction: column;
     }
-
 }
