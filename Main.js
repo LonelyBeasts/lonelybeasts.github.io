@@ -88,3 +88,30 @@ function previousContent() {
 
 startContentInterval(); // Start the interval
 
+const carousel = document.getElementById('carousel');
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleTouchStart(event) {
+  touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+  touchEndX = event.touches[0].clientX;
+}
+
+function handleTouchEnd() {
+  if (touchStartX - touchEndX > 100) { // Swipe left
+    nextContent();
+  } else if (touchEndX - touchStartX > 100) { // Swipe right
+    previousContent();
+  }
+  touchStartX = 0;
+  touchEndX = 0;
+}
+
+carousel.addEventListener('touchstart', handleTouchStart, false);
+carousel.addEventListener('touchmove', handleTouchMove, false);
+carousel.addEventListener('touchend', handleTouchEnd, false);
+
