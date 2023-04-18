@@ -88,6 +88,7 @@ header {
     padding: 40px;
     padding-top: 0;
     height: 100vh;
+    overflow-x: hidden;
   }
   
 
@@ -169,9 +170,7 @@ header {
     height: 30vw;
     max-width: 350px;
     max-height: 350px;
-    border-radius: 30px;
-    transform: rotate(5deg);
-    animation: image-animation 15s forwards;
+    animation: image-animation 5s forwards;
 }
 
 
@@ -330,8 +329,11 @@ header {
 .icon {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
-    margin-top: 10px;
+}
+
+.center-icon {
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .bottom-row {
@@ -467,7 +469,6 @@ header {
     .profile-image {
         width: 300px;
         height: 300px;
-        border-radius: 30px;
     }
 
     .content-image {
@@ -515,6 +516,11 @@ header {
 
     .icon-container {
         margin-right: 0px;
+    }
+
+    .center-icon {
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .text-container {
