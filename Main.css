@@ -155,7 +155,6 @@ header {
       transform: translateX(0) rotate(5deg);
       border-radius: 30px;
     }
-
 }
 
 .image-container {
@@ -172,7 +171,7 @@ header {
     max-height: 350px;
     border-radius: 30px;
     transform: rotate(5deg);
-    animation: image-animation 5s forwards;
+    animation: image-animation 15s forwards;
 }
 
 
